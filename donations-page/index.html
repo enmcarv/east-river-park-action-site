@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Donate To ERPA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="styles.css" type="text/css" />
+<script type="text/javascript" src="app.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Source+Sans+Pro&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/bb0ec1a780.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+        <div class="jumbotron">
+        <img class="background-img" src="header-img.jpg" alt="East river park picture.">
+        </div>
+           
+        <section class="page-nav">
+            <nav>
+                <section class="mobile-menu-wrapper">
+                    <button class="nav-menu" type="button" arealabel="menu" onclick="openMenu()">
+                        <i class="fas fa-bars fa-2x"></i>
+                        
+                    </button>
+                </section>
+                
+                <section id="side-nav" class="side-nav">
+                    <ul>
+                        <li>
+                            <a href="#" class="close-side-button" onclick="closeMenu()"><i class="far fa-times-circle fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://eastriverparkaction.org/home/">Home</a>
+                        </li>
+                        <li>
+                            <a href="http://eastriverparkaction.org/about/">Goals</a>
+                        </li>
+                        <li>
+                            <a href="http://eastriverparkaction.org/posts/">News</a>
+                        </li>
+                        <li>
+                            <a href="http://eastriverparkaction.org/posts/">Posts</a>
+                        </li>
+                         <li>
+                            <a href="../sign-up-page/index.html">Sign-Up</a>
+                        </li>
+                        <li>
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=ourpark@eastriverparkaction.org">Contact</a>
+                        </li>
+                    </ul>
+                </section>
+            </nav class="perm">
+            
+            <section class="title-wrapper">
+                <h1 class="title">Donations</h1>
+            </section>
+            
+            <nav>
+                <ul class="nav-bar">
+                    <li class="primary-action-wrapper">
+                        <a href="http://eastriverparkaction.org/actions-now/" class="primary-action nav-button">Act Now</a>
+                    </li>
+                    
+                    <li class="home-button-wrapper">
+                        <a href="http://eastriverparkaction.org/home/" class="home-button nav-button">Home</a>
+                    </li>
+                    
+                    <li class="news-button-wrapper">
+                        <a href="http://eastriverparkaction.org/links/" class="news-button nav-button">News</a>
+                    </li>
+                    
+                    <li class="sign-button-wrapper">
+                        <a href="http://eastriverparkaction.org/about/" class="signup-button nav-button">Goals</a>
+                    </li>
+                    <li class="sign-button-wrapper">
+                        <a href="http://eastriverparkaction.org/posts/" class="signup-button nav-button">Posts</a>
+                    </li>
+                    <li class="sign-button-wrapper">
+                        <a href="../sign-up-page/index.html" class="signup-button nav-button">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+  <main>
+        <h2>E.R.P.A is making our voices heard through
+          <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "Protests.", "Investigating legal action.", "Developing the plan."]'></span>
+        </h2>
+     <section class="content">
+         <section class="card">
+            <div class="blue-block">
+              <h3>Donate With PayPal</h3>
+            </div>
+            
+             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_donations" />
+                <input type="hidden" name="business" value="Z6XWD85PF9H4L" />
+                <input type="hidden" name="currency_code" value="USD" />
+                <label for="amount">How much would you like to Donate?</label>
+                <select id="donation-amt" name="amount">
+                  <option value="10USD">$10.00</option>
+                  <option value="25USD">$25.00</option>
+                  <option value="50USD">$50.00</option>
+                  <option value="75USD">$75.00</option>
+                </select>
+                <input type="submit" value="Donate" id="donate-btn" alt="Donate with paypal button.">
+                <input type="hidden" name="return" value="../thanks-page/index.html">
+             </form>
+             <img class="pay-methods" src="paymethods.png" alt="Possible methods of payment">
+          </section>
+          <article>
+              <img class="main-img" src="IMG_4655.jpg" alt="Image of ERP Protestors.">
+              <p>Mayor deBlasio: Closing and flattening the largest park in Lower Manhattan, a jewel along the waterfront, playground and sanctuary for some 110,000 low-and-middle income New Yorkers, is not a Green New Deal.</p>
+          </article>
+     </section>
+  </main>
+      <footer>
+          <nav>
+               <ul class="footer-nav">
+                  <li><a href="https://www.facebook.com/erpaction/"><img class ="social-btns" src="facebook.png"></a></li>
+                  <li><a href="https://www.instagram.com/eastriverparkaction/"><img class ="social-btns" src="instagram.png"></a></li>
+                  <li><a href="https://twitter.com/ERPAction"><img class ="social-btns" src="twitter.png"></a></li>
+              </ul>
+          </nav>
+      </footer>
+  
+       <script>
+            function openMenu(){
+                document.getElementById("side-nav").style.width="60vw";
+            }
+            
+            function closeMenu(){
+                document.getElementById("side-nav").style.width="0";
+            }
+        </script>
+
+</body>
+</html>

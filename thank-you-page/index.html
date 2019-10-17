@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/bb0ec1a780.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" class="css">
+    <title>Thank You</title>
+</head>
+<body>
+     <header>
+        <div class="wumbotron">
+        <img class="background-img" src="../donation-page/header-img.jpg" alt="East river park picture.">
+        </div>
+           
+        <section class="page-nav">
+        <nav>
+            <section class="mobile-menu-wrapper">
+                <button class="nav-menu" type="button" arealabel="menu" onclick="openMenu()">
+                    <i class="fas fa-bars fa-2x"></i>
+                    
+                </button>
+            </section>
+            
+            <section id="side-nav" class="side-nav">
+                <ul>
+                    <li>
+                        <a href="#" class="close-side-button" onclick="closeMenu()"><i class="far fa-times-circle fa-2x"></i>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="http://eastriverparkaction.org/home/">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://eastriverparkaction.org/about/">Goals</a>
+                    </li>
+                    <li>
+                        <a href="http://eastriverparkaction.org/posts/">News</a>
+                    </li>
+                    <li>
+                        <a href="http://eastriverparkaction.org/posts/">Posts</a>
+                    </li>
+                     <li>
+                        <a href="../donation-page/index.html">Donate</a>
+                    </li>
+                    <li>
+                        <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=ourpark@eastriverparkaction.org">Contact</a>
+                    </li>
+                </ul>
+            </section>
+        </nav class="perm">
+            
+            <section class="title-wrapper">
+                <h1 class="title">ERPA</h1>
+            </section>
+            
+        <nav>
+            <ul class="nav-bar">
+               <li class="primary-action-wrapper">
+                    <a href="http://eastriverparkaction.org/actions-now/" class="primary-action nav-button">Act Now</a>
+               </li>
+               <li class="home-button-wrapper">
+                    <a href="http://eastriverparkaction.org/home/" class="home-button nav-button">Home</a>
+                </li>
+                
+                <li class="news-button-wrapper">
+                    <a href="http://eastriverparkaction.org/links/" class="news-button nav-button">News</a>
+                </li>
+                
+                <li class="goals-button-wrapper">
+                    <a href="http://eastriverparkaction.org/about/" class="goals-button nav-button">Goals</a>
+                </li>
+                <li class="posts-button-wrapper">
+                    <a href="http://eastriverparkaction.org/posts/" class="posts-button nav-button">Posts</a>
+                </li>
+                <li class="donate-button-wrapper">
+                    <a href="../donation-page/index.html" class="donate-button nav-button">Donate</a>
+                </li>
+            </ul>
+        </nav>
+        </section>
+    </header>
+    <main>
+        <h1>Thank You For Your Donation!</h1>
+    </main>
+    
+    
+    <script>
+        function openMenu(){
+            document.getElementById("side-nav").style.width="60vw";
+        }
+        
+        function closeMenu(){
+            document.getElementById("side-nav").style.width="0";
+        }
+    </script>
+</body>
+</html>
